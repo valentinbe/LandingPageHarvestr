@@ -7,8 +7,8 @@ import { Component, Output, EventEmitter } from '@angular/core';
         .app-bar {
         position: fixed;
         top: 0;
-        left: 0;
         z-index: 9999;
+        left: 0;
         width: 100%;
         height: 65px;
         padding: 5px 30px;
@@ -45,7 +45,8 @@ import { Component, Output, EventEmitter } from '@angular/core';
         <span 
             [routerLink]="['']"
             class="logo col-xs-10">
-            Harvestr
+            <img src="../../img/logo.png" 
+                        class="float-right">
         </span>
         <nav class="col-xs-2">
             <div class="row middle-xs between-xs">

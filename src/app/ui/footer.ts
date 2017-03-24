@@ -38,6 +38,22 @@ import { Component, Input, EventEmitter } from '@angular/core';
         font-size: 20px;
         line-height: 45px;
         }
+        
+        .col-fixed-center{
+        width:520px;
+        height:100%;
+        padding-left: 25px;
+       padding-right: 25px;
+        }
+        .col-sides-left{
+            width: calc(50% - 520px);
+            float: left;
+        }
+        .col-sides-right{
+            width: calc(50% - 520px);
+            float: right;
+        }
+
     `],
     template: `
         <div 
@@ -45,12 +61,13 @@ import { Component, Input, EventEmitter } from '@angular/core';
         >
 
             <div class="row">
-                    <div class="col-lg-2 col-lg-offset-4">
+                    <div class="col-sides-left"></div>
+                    <div class="col-fixed-center">
                         <h3>Adresse</h3>
                         <p>1 Rue de la Libération
                             <br>78350 Jouy-en-Josas</p>
                     </div>
-                    <div class="col-lg-2">
+                    <div class="col-fixed-center">
                         <h3>Suivez nous sur le web</h3>
                       <div class="row">
                             <div class="col-lg-2 col-lg-offset-3">
@@ -71,6 +88,7 @@ import { Component, Input, EventEmitter } from '@angular/core';
                         <p></p>
                     </div>
                 </div>
+                <div class="col-sides-right"></div>
         </div>
     `
 })

@@ -8,7 +8,7 @@ import { Component, Input, EventEmitter } from '@angular/core';
            padding-top: 100px;
             width: 100%;
             position: relative;
-            height: 500px;
+            height: 600px;
             border-top: 2px solid #95989A;
             color: white;
             background-color: #F77F00;

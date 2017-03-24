@@ -18,10 +18,11 @@ import { Component } from '@angular/core';
                 "
             >
             </two-desc>
+        <!--    
         <testimonials-desc
             [testimonials]="testimonialsCards"
-        >
         </testimonials-desc>
+        --->
         <call-to-action
             [callToAction]="callToActionCard"
         >
@@ -41,7 +42,7 @@ export class LandingContainer {
 
     descCards = [
         {
-            title: 'A comprehensive user knowledge base for Product Managers', 
+            title: 'A comprehensive user knowledge base', 
             // tslint:disable-next-line:max-line-length
             text: 'Harvestr integrates with existing business applications to aggregate all product related feedback. Never lose valuable feedback again.', 
             textPositionIsLeft: false,
@@ -57,7 +58,7 @@ export class LandingContainer {
             color: 'white'
         },
         {
-            title: 'Close the feedback loop and improve product communication', 
+            title: 'Close the feedback loop, improve communication', 
             // tslint:disable-next-line:max-line-length
             text: 'Interact with users and teammates without leaving Harvestr. Keep everyone in the loop by providing updates about product related decisions and improvements.',  
             textPositionIsLeft: false,

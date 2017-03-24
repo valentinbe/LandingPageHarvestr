@@ -10,13 +10,14 @@ import { Component, Output, EventEmitter } from '@angular/core';
         z-index: 9999;
         left: 0;
         width: 100%;
-        height: 65px;
+        height: 100px;
         padding: 5px 30px;
         background-color: transparent ;
         color: white;
         transition: background-color 0.5s ease-out;
         }
         .page-scroll-header {
+        height: 80px;
         color: black;
         background-color: white;
         opacity: 1;
@@ -44,20 +45,32 @@ import { Component, Output, EventEmitter } from '@angular/core';
         
         <span 
             [routerLink]="['']"
-            class="logo col-xs-10">
-            <img src="../../img/logo.png" 
+            class="logo col-xs-2">
+            <img 
+            *ngIf="isScrolled"
+            src="../../img/logob.png" 
+                        class="float-right">
+            <img 
+            *ngIf="!isScrolled"
+            src="../../img/logow.png" 
                         class="float-right">
         </span>
-        <nav class="col-xs-2">
-            <div class="row middle-xs between-xs">
-            <span class="link"
-                [routerLink]="['', 'about']"
-            >About</span>
-            <span class="link"
-                (click)="onSignout()"
-            >signout</span>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#concept">Concept</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#about">Notre mission</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#contact">Nous contacter</a>
+                    </li>
+                </ul>
             </div>
-        </nav>
         </header>
     `
 })
@@ -72,7 +85,7 @@ export class AppBar {
     isScrolled = false;
     currPos: Number = 0;
     startPos: Number = 0;
-    changePos: Number = 100;
+    changePos: Number = 10;
 
     constructor() {}
 

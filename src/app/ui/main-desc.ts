@@ -10,7 +10,7 @@ import { AuthService } from '../services/auth';
             padding-top: 150px;
             width: 100%;
             position: relative;
-            height: 600px;
+            height: 700px;
         }
         .bckgd {
             background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../../img/maindesc.jpg);
@@ -21,14 +21,35 @@ import { AuthService } from '../services/auth';
         .text {
             margin-bottom: 15px;
         }
+
+        .col-fixed-center-left{
+        width:770px;
+        height:100%;
+        padding-left: 25px;
+       padding-right: 25px;
+        }
+        .col-fixed-center-right{
+        width:270px;
+        height:100%;
+        padding-left: 25px;
+       padding-right: 25px;
+        }
+        .col-sides-left{
+            width: calc(50% - 520px);
+            float: left;
+        }
+        .col-sides-right{
+            width: calc(50% - 520px);
+            float: right;
+        }
     `],
     template: `
         <div class="bckgd item active" style="">
         <div 
             class="note-card row"
         >
-        
-        <div class="col-lg-4 col-lg-offset-3 ">
+        <div class="col-sides-left"></div>
+        <div class="col-fixed-center-left">
         <div class="text">
         <h1>
             {{ descCard.title }}
@@ -67,6 +88,9 @@ import { AuthService } from '../services/auth';
         </div>
       </form>
       </div>
+      <div class="col-fixed-center-right"></div>
+      <div class="col-sides-right"></div>
+        
     </div>
     </div>
     `

@@ -5,7 +5,7 @@ import { HttpModule } from '@angular/http'
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { App, providers, routes } from './app'; /* importe automatiquement le fichier index dans le folder qui inclut tous les exports */
 import { Main, LandingContainer, About, Auth } from './app/containers';
-import { AppBar, TwoDesc, MainDesc, Testimonials, CallToAction, Footer } from './app/ui';
+import { AppBar, TwoDesc, MainDesc, Testimonials, CallToAction, Footer, NavbarDropdown } from './app/ui';
 
 
 @NgModule({
@@ -21,7 +21,8 @@ import { AppBar, TwoDesc, MainDesc, Testimonials, CallToAction, Footer } from '.
         Auth,
         Testimonials,
         Footer,
-        CallToAction
+        CallToAction, 
+        NavbarDropdown
     ], 
     /* pours les services */
     providers,

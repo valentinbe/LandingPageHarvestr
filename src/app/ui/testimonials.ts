@@ -5,7 +5,7 @@ import { Component, Input, EventEmitter } from '@angular/core';
     /* on peut ajouter du CSS dans les styles */
     styles: [` 
        .note-card {
-           padding-top: 100px;
+           padding-top: 120px;
             width: 100%;
             position: relative;
             height: 600px;
@@ -33,16 +33,29 @@ import { Component, Input, EventEmitter } from '@angular/core';
     .quote{
         font-style: italic;
         padding: 15px;
+        padding-bottom: 35px;
     }
+
+    @media (max-width : 1039px )
+    {
+        .note-card {
+           padding-top: 100px;
+        }
+        
+        .row {
+            margin:30px;
+        }
+    }
+    
     `],
     template: `
         <div 
             class="note-card">
 
             <div class="row">
-                <div class="col-lg-offset-1">
+                <div class="col-lg-offset-3">
                 </div> 
-                <div class="col-lg-5  "
+                <div class="col-lg-6  "
                 *ngFor="let testimonial of testimonials">
                 <div class="circular--landscape">
                     <img src="{{ testimonial.pictureUrl }}" 

@@ -44,8 +44,6 @@ import { Component, Output, EventEmitter, NgZone } from '@angular/core';
             text-align: left;
         }
 
-        
-
         .material-icons.dropdownIcon {
             padding: 5px;
             font-size: 19px; 
@@ -157,7 +155,7 @@ export class AppBar {
             link: "['', 'about']",
         },
         {
-            text: 'test',
+            text: 'Contact us',
             link: "['', 'about']",
         }
     ];
@@ -183,7 +181,7 @@ export class AppBar {
         if (this.windowWidth < 600) {
                 this.collapseState = 2;
         } else {
-            if (this.windowWidth < 900) {
+            if (this.windowWidth < 1040) {
                 this.collapseState = 1;
             } else {
                 this.collapseState = 0;
@@ -197,7 +195,7 @@ export class AppBar {
             if (this.windowWidth < 600) {
                 this.collapseState = 2;
             } else {
-                if (this.windowWidth < 900) {
+                if (this.windowWidth < 1040) {
                     this.collapseState = 1;
                 } else {
                     this.collapseState = 0;

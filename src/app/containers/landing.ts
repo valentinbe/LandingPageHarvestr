@@ -18,16 +18,18 @@ import { Component } from '@angular/core';
                 "
             >
             </two-desc>
-        <!--    
+  
         <testimonials-desc
-            [testimonials]="testimonialsCards"
+            [testimonials]="testimonialsCards">
         </testimonials-desc>
-        --->
+
         <call-to-action
             [callToAction]="callToActionCard"
         >
         </call-to-action>
+        <!--
         <footer></footer>
+        --->
     </div>
   `
 })
@@ -78,12 +80,12 @@ export class LandingContainer {
     testimonialsCards = [
         {
             name: 'Maïa Metz',
-            pictureUrl: '../../img/2.jpg',
+            pictureUrl: '../../img/profile.jpg',
             role: 'Head of Product',
             company: 'Aircall',
             // tslint:disable-next-line:max-line-length
             testimonial: 'At Aircall, the support, sales and customer success teams have a lot of valuable customer feedback to share. I really need a tool to aggregate this information and to communicate about product-related decisions to the other teams. Great job Harvestr!'
-        },
+        }/*,
         {
             name: 'Lucas Didier',
             pictureUrl: '../../img/2.jpg',
@@ -91,7 +93,7 @@ export class LandingContainer {
             company: 'Blablacar',
             // tslint:disable-next-line:max-line-length
             testimonial: 'I need user analysis and reports but I also need to dig deeper into the large amount of feedback we have to get more details, to look at verbatims, etc'
-        }
+        }*/
     ];
 
     callToActionCard = {

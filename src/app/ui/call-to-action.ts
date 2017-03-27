@@ -1,4 +1,5 @@
 import { Component, Input, EventEmitter } from '@angular/core';
+import {CanActivate, Router} from '@angular/router';
 
 @Component({
     selector: 'call-to-action',
@@ -53,6 +54,21 @@ import { Component, Input, EventEmitter } from '@angular/core';
             width: calc(50% - 390px);
             float: right;
         }
+
+        @media (max-width : 1039px )
+        {
+            .call-to-action-content{
+                display: none;
+                padding-bottom: 60px;
+                border: none;
+                text-align: center;
+            }
+
+            .btn-light{
+                margin: 50px;
+                float: center;
+            }
+        }
     `],
     template: `
 <div 
@@ -79,6 +95,7 @@ import { Component, Input, EventEmitter } from '@angular/core';
                 </div>
                 <div class="desc-text col-md-3">
                     <button
+                        (click)="clickedcallToAction()"
                         class="btn-light"
                     >
                         {{ callToAction.butText }}
@@ -97,4 +114,10 @@ import { Component, Input, EventEmitter } from '@angular/core';
 /* on peut now utiliser l'objet "note" et ses attributs en interpolation dans le html du template*/
 export class CallToAction {
     @Input() callToAction = {};
+
+    constructor( private router: Router ) { }
+
+    clickedcallToAction() {
+        this.router.navigate(['', 'call']);
+    }
 };

@@ -99,16 +99,40 @@ import { AuthService } from '../services/auth';
 /* notre note card a maintenant la possibilité de recevoir du contenu*/
 /* on peut now utiliser l'objet "note" et ses attributs en interpolation dans le html du template*/
 export class MainDesc {
+    
     @Input() descCard = {};
 
     user = {
         email: ''
     };
 
+    
+
     constructor(
         private auth: AuthService) {}
 
+
+    // email regex
+    validateEmail(email) {
+        // tslint:disable-next-line:max-line-length
+        var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return re.test(email);
+    }
+
     sendEmail() {
+        var email = this.user.email;
+
+        if ( this.validateEmail(email) ) {
+        // var messageListRef = firebase.database().ref().child('email_list');
+        //  messageListRef.push({ 'email': email });
+        this.user.email = "";
+
+        
+        window.alert("Merci!");
+        //  document.activeElement.blur();
+        } else {
+        window.alert("Veuillez entrer une adresse valide");
+        }
         /*this.auth.authenticate(this.user)
         .subscribe(); */
     }

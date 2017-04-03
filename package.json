@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "heroku-postbuild": "webpack -p --config ./webpack.prod.config.js --progress",
+
     "test": "webpack --config webpack.spec.ts --progress --color && karma start",
     "start": "NODE_ENV=production webpack -p --config webpack.config.js",
     "api": "angularclass-server --api retain --port 3500 --auth",

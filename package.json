@@ -8,7 +8,7 @@
     
     "start": "NODE_ENV=production",
 
-    "dev": "webpack-dev-server --inline --colors --progress --display-error-details --display-cached --port 3000  --content-base src",
+    "dev": "webpack-dev-server --inline --colors --progress --display-error-details --display-cached --port 3000  --content-base src"
   /*  "heroku-postbuild": "webpack -p --config ./webpack.prod.config.js --progress",
     
     "start": "NODE_ENV=production webpack -p --config webpack.config.js",

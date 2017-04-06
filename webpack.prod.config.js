@@ -26,7 +26,7 @@ var config = {
   },
 
   plugins: [
-  /*  new webpack.optimize.DedupePlugin(),
+    new webpack.optimize.DedupePlugin(),
     new webpack.optimize.UglifyJsPlugin({
       minimize: true,
       compress: {
@@ -39,7 +39,7 @@ var config = {
       }
     }),
     new webpack.optimize.CommonsChunkPlugin({ name: ['polyfills', 'vendor', 'main'].reverse(), minChunks: Infinity }),
- */ ],
+  ],
 
   resolve: {
     extensions: ['', '.ts', '.js', '.json']

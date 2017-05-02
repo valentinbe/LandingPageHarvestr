@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
     `],
   template: `
     <div class="landing-container">
+    <div> rezzerz </div>
       <main-desc 
                 [descCard]="mainCard"
             >

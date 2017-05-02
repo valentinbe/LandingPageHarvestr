@@ -7,7 +7,7 @@
     "postinstall": "NODE_ENV=production webpack --config ./webpack.prod.config.js --progress --colors",
     "postbackup": "NODE_ENV=production webpack -p --config ./webpack.prod.config.js --progress",
     "start": "",
-    "startbackup": "node server.js && npm run api",
+    "vstartbackup": "node server.js && npm run api",
     "dev": "webpack-dev-server --inline --colors --progress --display-error-details --display-cached --port 3000  --content-base src"
   },
   "author": "",

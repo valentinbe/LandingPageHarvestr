@@ -61,6 +61,12 @@ import { AngularFire, FirebaseListObservable } from 'angularfire2';
         </h6>
         </div>
 
+        <ul>
+    <li class="text" *ngFor="let item of messageListRef | async">
+            {{item.$value}}
+        </li>
+    </ul>
+
         <form (ngSubmit)="sendEmail()" 
         #authForm="ngForm">
         <div class="inputs row">
@@ -73,10 +79,6 @@ import { AngularFire, FirebaseListObservable } from 'angularfire2';
             [(ngModel)]="user.email"
             #email="ngModel"
           >
-          <div class="error" 
-            [hidden]="email.valid || email.pristine"
-          >
-            email non valide</div>
           <div class="actions">
             <div>
               <button

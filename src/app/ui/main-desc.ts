@@ -104,6 +104,8 @@ export class MainDesc {
     
     @Input() descCard = {};
 
+    messageListRef: FirebaseListObservable<any[]>;
+
     user = {
         email: ''
     };
@@ -127,13 +129,14 @@ export class MainDesc {
 
         if ( this.validateEmail(email) ) {
             
-        var messageListRef = this.af.database.list('/emails_list');
-        messageListRef.push({ 'email': email });
+        
+        this.messageListRef = this.af.database.list('/emails_list');
+        this.messageListRef.push({ 'email': email });
         this.user.email = "";
 
         
         window.alert("Thank you");
-        //document.activeElement.blur();
+        // document.activeElement.blur();
         } else {
         window.alert("Please enter a valid email adress");
         }

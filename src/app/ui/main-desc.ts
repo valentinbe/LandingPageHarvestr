@@ -116,6 +116,7 @@ export class MainDesc {
     constructor(
         private af: AngularFire,
         private auth: AuthService) {
+            this.messageListRef = af.database.list('/emails_list');
         }
 
 
@@ -131,8 +132,6 @@ export class MainDesc {
 
         if ( this.validateEmail(email) ) {
             
-        
-        this.messageListRef = this.af.database.list('/emails_list');
         this.messageListRef.push({ 'email': email });
         this.user.email = "";
 

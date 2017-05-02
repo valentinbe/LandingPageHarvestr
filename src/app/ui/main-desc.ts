@@ -127,15 +127,15 @@ export class MainDesc {
 
         if ( this.validateEmail(email) ) {
             
-        var messageListRef = this.af.database.list('/email_list');
+        var messageListRef = this.af.database.list('/emails_list');
         messageListRef.push({ 'email': email });
         this.user.email = "";
 
         
-        window.alert("Merci!");
-        //  document.activeElement.blur();
+        window.alert("Thank you");
+        //document.activeElement.blur();
         } else {
-        window.alert("Veuillez entrer une adresse valide");
+        window.alert("Please enter a valid email adress");
         }
         /*this.auth.authenticate(this.user)
         .subscribe(); */

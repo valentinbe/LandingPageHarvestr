@@ -4,12 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-   "postinstall": "webpack -p --config ./webpack.prod.config.js --progress",
-    
-    "start": "NODE_ENV=production",
+   "postinstall": "NODE_ENV=production webpack -p --config ./webpack.prod.config.js --progress",
+    "start": "node ./dist/main.bundle.js",
 
     "dev": "webpack-dev-server --inline --colors --progress --display-error-details --display-cached --port 3000  --content-base src"
-
   },
   "author": "",
   "license": "ISC",

@@ -58,10 +58,9 @@ import { AngularFire, FirebaseListObservable } from 'angularfire2';
         </h1>
         <h6>
             {{ descCard.sub }}
-        </h6>
-        </div>
 
-        <ul>
+<div> popopoppoppopopoopop </div>
+            <ul>
 
         <div> popopoppoppopopoopop </div>
     <li class="text" *ngFor="let item of messageListRef | async">
@@ -69,6 +68,10 @@ import { AngularFire, FirebaseListObservable } from 'angularfire2';
         </li>
     </ul>
 
+        </h6>
+        </div>
+
+        
         <form (ngSubmit)="sendEmail()" 
         #authForm="ngForm">
         <div class="inputs row">

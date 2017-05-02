@@ -127,8 +127,7 @@ export class MainDesc {
 
         if ( this.validateEmail(email) ) {
             
-        var messageListRef = this.af.database().ref().child();
-        messageListRef = 'email_list';
+        var messageListRef = this.af.database.list('/email_list');
         messageListRef.push({ 'email': email });
         this.user.email = "";
 

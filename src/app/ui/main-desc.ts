@@ -54,7 +54,7 @@ import { AngularFire, FirebaseListObservable } from 'angularfire2';
         <div class="col-fixed-center-left">
         <div class="text">
         <h1>
-            {{ descCard.title }}
+            hello
         </h1>
         <h6>
             {{ descCard.sub }}

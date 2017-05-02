@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-   "postinstall": "NODE_ENV=production webpack -p --config ./webpack.prod.config.js --progress",
-    "start": "node ./dist/main.bundle.js",
+   "postinstall": "NODE_ENV=production webpack --content-base src --progress",
+   "postbackup": "NODE_ENV=production webpack -p --config ./webpack.prod.config.js --progress",
+    "start": "",
 
     "dev": "webpack-dev-server --inline --colors --progress --display-error-details --display-cached --port 3000  --content-base src"
   },

@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "postinstall": "NODE_ENV=production webpack --config ./webpack.prod.config.js --progress --colors && cp ./src/index.html ./dist/index.html && cp ./src/global.css ./dist/global.css && cp -R ./src/img ./dist/img ",
+    "postinstall": "rimraf ./dist && NODE_ENV=production webpack --config ./webpack.prod.config.js --progress --colors && cp ./src/index.html ./dist/index.html && cp ./src/global.css ./dist/global.css && cp -R ./src/img ./dist/img ",
     "postbackup": "NODE_ENV=production webpack -p --config ./webpack.prod.config.js --progress",
     "start": "node server.js && npm run api",
     "vstartbackup": "node server.js && npm run api",

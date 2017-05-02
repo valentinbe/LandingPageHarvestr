@@ -15,6 +15,6 @@ export const routes: ModuleWithProviders = RouterModule.forRoot([
       { path: 'about', component: About }
     ]
   },
-  { path: 'auth', component: Auth },
+//  { path: 'auth', component: Auth },
   { path: '**', redirectTo: '' } /** ** means anything else */
 ]);

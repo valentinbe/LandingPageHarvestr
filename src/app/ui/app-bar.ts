@@ -117,6 +117,7 @@ import { Component, Output, EventEmitter, NgZone } from '@angular/core';
                 *ngIf="!collapseState"
                 class="row middle-xs between-xs col-sides-right">
                 <span class="link"
+                    href="{{ contentMenu.link }}"
                     *ngFor="let contentMenu of navContent"
                 >
                     {{ contentMenu.text }}

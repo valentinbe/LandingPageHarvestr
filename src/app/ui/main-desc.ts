@@ -62,6 +62,8 @@ import { AngularFire, FirebaseListObservable } from 'angularfire2';
         </div>
 
         <ul>
+
+        <div> popopoppoppopopoopop </div>
     <li class="text" *ngFor="let item of messageListRef | async">
             {{item.$value}}
         </li>

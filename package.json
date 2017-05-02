@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-   "postinstall": "NODE_ENV=production webpack --content-base src --progress",
+   "postinstall": "NODE_ENV=production webpack --config ./webpack.prod.config.js --progress --colors",
    "postbackup": "NODE_ENV=production webpack -p --config ./webpack.prod.config.js --progress",
     "start": "",
 

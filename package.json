@@ -6,7 +6,7 @@
   "scripts": {
     "postinstall": "NODE_ENV=production webpack --config ./webpack.prod.config.js --progress --colors",
     "postbackup": "NODE_ENV=production webpack -p --config ./webpack.prod.config.js --progress",
-    "start": "",
+    "start": "node server.js && npm run api",
     "vstartbackup": "node server.js && npm run api",
     "dev": "webpack-dev-server --inline --colors --progress --display-error-details --display-cached --port 3000  --content-base src"
   },
@@ -25,7 +25,9 @@
     "angular-cli": "1.0.0-beta.22-1",
     "core-js": "^2.4.1",
     "express": "^4.15.2",
+    "gzippo": "^0.2.0",
     "lodash": "^4.16.1",
+    "morgan": "^1.8.1",
     "rxjs": "^5.0.0-beta.12",
     "zone.js": "^0.6.25"
   },

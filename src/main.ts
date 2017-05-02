@@ -6,7 +6,7 @@ import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { App, providers, routes } from './app'; /* importe automatiquement le fichier index dans le folder qui inclut tous les exports */
 import { Main, LandingContainer, About, Auth } from './app/containers';
 import { AppBar, TwoDesc, MainDesc, Testimonials, CallToAction, Footer, NavbarDropdown } from './app/ui';
-
+import { AngularFireModule } from 'angularfire2';
 
 @NgModule({
     /*list of modules want to use in our app*/
@@ -26,7 +26,9 @@ import { AppBar, TwoDesc, MainDesc, Testimonials, CallToAction, Footer, NavbarDr
     ], 
     /* pours les services */
     providers,
-    imports: [BrowserModule, FormsModule, HttpModule, routes],
+    imports: [BrowserModule, FormsModule, 
+                AngularFireModule.initializeApp(firebaseConfig),
+                HttpModule, routes],
     /* load component when component is bootstrapped */
     bootstrap: [App]
 })

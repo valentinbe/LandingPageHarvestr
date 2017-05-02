@@ -1,5 +1,7 @@
 import { Component, Input, EventEmitter } from '@angular/core';
 import { AuthService } from '../services/auth';
+import { AngularFire, FirebaseListObservable } from 'angularfire2';
+
 
 @Component({
     selector: 'main-desc',
@@ -106,10 +108,11 @@ export class MainDesc {
         email: ''
     };
 
-    
 
     constructor(
-        private auth: AuthService) {}
+        private af: AngularFire,
+        private auth: AuthService) {
+        }
 
 
     // email regex
@@ -123,8 +126,9 @@ export class MainDesc {
         var email = this.user.email;
 
         if ( this.validateEmail(email) ) {
-        // var messageListRef = firebase.database().ref().child('email_list');
-        //  messageListRef.push({ 'email': email });
+            
+        var messageListRef = af.database.ref.child('email_list');
+        messageListRef.push({ 'email': email });
         this.user.email = "";
 
         

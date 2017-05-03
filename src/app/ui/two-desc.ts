@@ -82,7 +82,11 @@ import { Component, Input, EventEmitter, NgZone } from '@angular/core';
         }
 
         .img-content {
-            display: none;
+            text-align: center;
+            max-width: 100%;
+            height:auto;
+            text-align: center;  
+            padding-top: 100px; 
         }
     }
     `],

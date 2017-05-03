@@ -74,6 +74,8 @@ import { Component, Input, EventEmitter, NgZone } from '@angular/core';
             padding-bottom: 50px;
             text-align:center;
             height: 100%;
+            padding-left: 35px;
+            padding-right: 35px;
         }
         
         .text-content {
@@ -82,10 +84,7 @@ import { Component, Input, EventEmitter, NgZone } from '@angular/core';
         }
 
         .img-content {
-            text-align: center;
-            height:auto;
-            text-align: center;  
-            padding-top: 100px; 
+            display: none;
         }
     }
     `],

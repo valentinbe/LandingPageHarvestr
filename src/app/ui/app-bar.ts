@@ -108,7 +108,7 @@ import { Component, Output, EventEmitter, NgZone } from '@angular/core';
         >
         <div class="row middle-xs">
             <span 
-                [routerLink]="['']"
+                [routerLink]="['/']"
                 class="logo col-sides-left">
                 <img 
                 *ngIf="isScrolled"
@@ -168,15 +168,15 @@ export class AppBar {
     navContent = [
         {
             text: 'About',
-            link: "['', 'about']",
+            link: "['/about']",
         },
         {
             text: 'More',
-            link: "['', 'about']",
+            link: "['./about']",
         },
         {
             text: 'Contact us',
-            link: "['', 'about']",
+            link: "['/', 'about']",
         }
     ];
 
@@ -215,7 +215,7 @@ export class AppBar {
             if (this.windowWidth < 600) {
                 this.collapseState = 2;
             } else {
-                if (this.windowWidth < 1040) {
+                if (this.windowWidth < 745) {
                     this.collapseState = 1;
                 } else {
                     this.collapseState = 0;

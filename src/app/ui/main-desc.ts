@@ -51,12 +51,12 @@ import { AngularFire, FirebaseListObservable } from 'angularfire2';
             }
 
             h1{
-                font-size: 12vw;
-                Line-Height: 12vw;
+                font-size: 10vw;
+                Line-Height: 10vw;
             }
             h6{
-                font-size: 8vw;
-                Line-Height: 8vw;
+                font-size: 6vw;
+                Line-Height: 6vw;
             }
         }
     `],

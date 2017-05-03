@@ -49,7 +49,7 @@ import { Component, Input, EventEmitter } from '@angular/core';
 
         @media (max-width : 500px )
         {
-            .h6{
+            h6{
                 font-size: 22px;
             }
 

@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
      
     `],
   template: `
-  
+    <div class="landing-container">
       <main-desc 
                 [descCard]="mainCard"
             >
@@ -30,6 +30,7 @@ import { Component } from '@angular/core';
         <!--
         <footer></footer>
         --->
+    </div>
   `
 })
 

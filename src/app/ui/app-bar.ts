@@ -10,6 +10,7 @@ import { Component, Output, EventEmitter, NgZone } from '@angular/core';
             z-index: 9988;
             left: 0;
             width: 100%;
+            height: 100px;
             padding: 5px 30px;
             background-color: transparent ;
             color: white;
@@ -17,6 +18,7 @@ import { Component, Output, EventEmitter, NgZone } from '@angular/core';
             border-color: white;
         }
         .page-scroll-header {
+            height: 80px;
             color: black;
             background-color: white;
             opacity: 1;
@@ -88,8 +90,8 @@ import { Component, Output, EventEmitter, NgZone } from '@angular/core';
             *ngIf="triggerDropdown"
             (dropdownClose)="hideDropdown()">
         </dropdown-bar>
-
-        <header class="app-bar row middle-xs"
+        
+        <header class="app-bar "
         [ngClass]= "{'page-scroll-header': isScrolled}"
         >
         

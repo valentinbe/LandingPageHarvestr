@@ -11,7 +11,6 @@ import { AngularFire, FirebaseListObservable } from 'angularfire2';
             color: white;
             padding-top: 150px;
             width: 100%;
-            position: relative;
             height: 700px;
         }
         .bckgd {

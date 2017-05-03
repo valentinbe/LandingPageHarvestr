@@ -58,6 +58,18 @@ import { AngularFire, FirebaseListObservable } from 'angularfire2';
                 font-size: 6vw;
                 Line-Height: 6vw;
             }
+
+            input{
+                padding: 10px;
+                margin-bottom: 10px;
+                margin-right: 10px;
+                margin-left: 10px;
+                font-size: 6vw;
+            }
+
+            button{
+
+            }
         }
     `],
     template: `

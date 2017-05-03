@@ -15,44 +15,44 @@ import { Component, Input, EventEmitter } from '@angular/core';
             text-align: center;
         } 
         .circular--landscape {
-        display: inline-block;
-        position: relative;
-        width: 100px;
-        height: 100px;
-        overflow: hidden;
-        border-radius: 50%;
-        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+            display: inline-block;
+            position: relative;
+            width: 100px;
+            height: 100px;
+            overflow: hidden;
+            border-radius: 50%;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
         }
 
         .circular--landscape profilePic {
-        width: auto;
-        height: 100%;
-        margin-left: -50px;
-    }
-    
-    .quote{
-        font-style: italic;
-        padding: 15px;
-        padding-bottom: 35px;
-    }
-
-    @media (max-width : 1039px )
-    {
-        .note-card {
-           padding-top: 100px;
+            width: auto;
+            height: 100%;
+            margin-left: -50px;
         }
         
-        .row {
-            margin:30px;
+        .quote{
+            font-style: italic;
+            padding: 15px;
+            padding-bottom: 35px;
         }
-    }
 
-    @media (max-width : 500px )
-    {
-        .profilePic {
-            display: none;
+        @media (max-width : 1039px )
+        {
+            .note-card {
+            padding-top: 100px;
+            }
+            
+            .row {
+                margin:30px;
+            }
         }
-    }
+
+        @media (max-width : 500px )
+        {
+            .circular--landscape {
+                display: none;
+            }
+        }
     
     `],
     template: `

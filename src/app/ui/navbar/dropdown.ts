@@ -70,7 +70,7 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
                 <li class="page-scroll"
                     *ngFor="let contentMenu of navContent"
                 >
-                    <a [routerLink]="{{ contentMenu.link }}">{{ contentMenu.text }}</a>
+                    <a href="{{ contentMenu.link }}">{{ contentMenu.text }}</a>
                 </li>
             </ul>
         </header>

@@ -19,7 +19,7 @@ export class ApiService {
     });
 
     /* url we use for the api */
-    api_url: string = 'http://localhost:3500';
+    api_url: string = 'https://harvestrio.herokuapp.com:8080';
 
     /* from ES6 , allow us to inject http service into our api service  */
     constructor(private http: Http) {

@@ -47,6 +47,13 @@ import { Component, Input, EventEmitter } from '@angular/core';
             }
         }
 
+        @media (max-width : 650px )
+        {
+            .circular--landscape {
+                display: none;
+            }
+        }
+
         @media (max-width : 500px )
         {
 
@@ -59,9 +66,7 @@ import { Component, Input, EventEmitter } from '@angular/core';
                 Line-Height: 8vw;
             }
 
-            .circular--landscape {
-                display: none;
-            }
+            
 
             .note-card {
                 padding-top: 30px;  

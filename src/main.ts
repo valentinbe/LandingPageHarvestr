@@ -8,6 +8,7 @@ import { Main, LandingContainer, About, Auth } from './app/containers';
 import { AppBar, TwoDesc, MainDesc, Testimonials, CallToAction, Footer, NavbarDropdown } from './app/ui';
 import { AngularFireModule } from 'angularfire2';
 import { firebaseConfig } from './env/firebase.config';
+import {enableProdMode} from '@angular/core';
 
 @NgModule({
     /*list of modules want to use in our app*/
@@ -35,5 +36,6 @@ import { firebaseConfig } from './env/firebase.config';
 })
 export class AppModule{};
 
+enableProdMode(); /* production mode */
 platformBrowserDynamic().bootstrapModule(AppModule);
 

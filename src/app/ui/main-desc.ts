@@ -8,9 +8,7 @@ import { AngularFire, FirebaseListObservable } from 'angularfire2';
     /* on peut ajouter du CSS dans les styles */
     styles: [` 
         .app-bar {
-        position: fixed;
         top: 0;
-        z-index: 9999;
         left: 0;
         width: 100%;
         padding: 5px 30px;

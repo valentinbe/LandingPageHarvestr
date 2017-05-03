@@ -14,6 +14,7 @@ import { AngularFire, FirebaseListObservable } from 'angularfire2';
             height: 700px;
         }
         .bckgd {
+            width: 100%;
             background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../../img/maindesc.jpg);
             background-repeat: no-repeat;
             background-size: cover;
@@ -45,12 +46,9 @@ import { AngularFire, FirebaseListObservable } from 'angularfire2';
         }
     `],
     template: `
-        <div 
-            class="note-card"
-        >
         <div class="bckgd item active" style="">
             <div 
-                class="row"
+                class="note-card row"
             >
                 <div class="col-sides-left"></div>
                 <div class="col-fixed-center-left">
@@ -90,8 +88,7 @@ import { AngularFire, FirebaseListObservable } from 'angularfire2';
                 <div class="col-fixed-center-right"></div>
                 <div class="col-sides-right"></div>     
             </div>
-        </div>
-        </div>
+    </div>
     `
 })
 

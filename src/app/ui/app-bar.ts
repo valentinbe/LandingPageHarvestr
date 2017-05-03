@@ -5,37 +5,40 @@ import { Component, Output, EventEmitter, NgZone } from '@angular/core';
     /* on peut ajouter du CSS dans les styles */
     styles: [` 
         .app-bar {
-        position: fixed;
-        top: 0;
-        z-index: 9988;
-        left: 0;
-        width: 100%;
-        height: 100px;
-        padding: 5px 30px;
-        background-color: transparent ;
-        color: white;
-        transition: background-color 0.5s ease-out;
-        border-color: white;
+            position: fixed;
+            top: 0;
+            z-index: 9988;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            padding: 5px 30px;
+            background-color: transparent ;
+            color: white;
+            transition: background-color 0.5s ease-out;
+            border-color: white;
         }
         .page-scroll-header {
-        height: 80px;
-        color: black;
-        background-color: white;
-        opacity: 1;
-        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-        border-color: black;
+            height: 80px;
+            color: black;
+            background-color: white;
+            opacity: 1;
+            box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+            border-color: black;
         }
         .logo {     
-        font-size: 30px;
-        font-weight: 300;
-        cursor: pointer;
+            font-size: 30px;
+            font-weight: 300;
+            cursor: pointer;
         }
         .link {
-        font-size: 24px;
-        font-weight: 400;
-        cursor: pointer; 
-        color: white;
-        text-decoration:none;
+            font-size: 24px;
+            font-weight: 400;
+            cursor: pointer; 
+        }
+
+        a {
+            color: inherit;
+            text-decoration:none;
         }
         
         .menu-dropdown{

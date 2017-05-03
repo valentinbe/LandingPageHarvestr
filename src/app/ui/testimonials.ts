@@ -52,6 +52,10 @@ import { Component, Input, EventEmitter } from '@angular/core';
             .circular--landscape {
                 display: none;
             }
+
+            .note-card {
+                padding-top: 60px;  
+            } 
         }
     
     `],

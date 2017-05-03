@@ -46,6 +46,13 @@ import { Component, Input, EventEmitter } from '@angular/core';
             margin:30px;
         }
     }
+
+    @media (max-width : 500px )
+    {
+        .profilePic {
+            display: none;
+        }
+    }
     
     `],
     template: `

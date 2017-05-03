@@ -11,7 +11,7 @@ import { Component, Output, EventEmitter, NgZone } from '@angular/core';
             left: 0;
             width: 100%;
             height: 100px;
-            
+            padding-top: 5px;
             background-color: transparent ;
             color: white;
             transition: background-color 0.5s ease-out;

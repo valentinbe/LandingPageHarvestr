@@ -45,9 +45,9 @@ import { AngularFire, FirebaseListObservable } from 'angularfire2';
         }
     `],
     template: `
-        <div class="bckgd item active" style="">
+        <div class="bckgd item active note-card" style="">
             <div 
-                class="note-card"
+                class=""
             >
             <div 
                 class="row"

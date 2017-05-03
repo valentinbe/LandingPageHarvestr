@@ -7,87 +7,79 @@ import { AngularFire, FirebaseListObservable } from 'angularfire2';
     selector: 'main-desc',
     /* on peut ajouter du CSS dans les styles */
     styles: [` 
-       .note-card {
-            color: white;
-            padding-top: 150px;
-            width: 100%;
-            height: 700px;
-        }
-        .bckgd {
-            background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../../img/maindesc.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        .text {
-            margin-bottom: 15px;
+        .app-bar {
+        position: fixed;
+        top: 0;
+        z-index: 9999;
+        left: 0;
+        width: 100%;
+        padding: 5px 30px;
+        background-color: #F57F1E ;
+        opacity: 0.97;
+        color: white;
         }
 
-        .col-fixed-center-left{
-        width:770px;
-        height:100%;
-        padding-left: 25px;
-       padding-right: 25px;
+        .logo {     
+        font-size: 90px;
+        font-weight: 300;
+        cursor: pointer;
         }
-        .col-fixed-center-right{
-        width:270px;
-        height:100%;
-        padding-left: 25px;
-       padding-right: 25px;
-        }
-        .col-sides-left{
-            width: calc(50% - 520px);
-            float: left;
-        }
-        .col-sides-right{
-            width: calc(50% - 520px);
-            float: right;
-        }
+        .link {
+        font-size: 24px;
+        font-weight: 400;
+        cursor: pointer; 
+    }
+
+    a,
+    a:hover,
+    a:focus,
+    a:active,
+    a.active{
+        color: white;
+        font-size: 38px;
+        Line-Height: 75pt;
+        font-weight: 450;
+        text-decoration:none;
+    }
+
+    li {
+        list-style-type: none;
+    }
+
+    .material-icons.close { 
+        padding: 12px 0px;
+        font-size: 50px; 
+        float: right;
+        cursor: pointer; 
+    }
     `],
     template: `
-        <div class="bckgd " style="">
-            <div 
-                class="note-card row"
-            >
-                <div class="col-sides-left"></div>
-                <div class="col-fixed-center-left">
-                    <div class="text">
-                        <h1>
-                            {{ descCard.title }}
-                        </h1>
-                        <h6>
-                            {{ descCard.sub }}
-                        </h6>
-                    </div>  
-                    <form (ngSubmit)="sendEmail()" 
-                    #authForm="ngForm">
-                        <div class="inputs row">
-                            <input
-                                class="email col-xs-8"
-                                type="email"
-                                name="email"
-                                placeholder="{{ descCard.inputText }}"
-                                required
-                                [(ngModel)]="user.email"
-                                #email="ngModel"
-                            >
-                            <div class="actions">
-                                <div>
-                                <button
-                                    type="submit"
-                                    class="btn-light"
-                                >
-                                    {{ descCard.butText }}
-                                </button>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <div class="col-fixed-center-right"></div>
-                <div class="col-sides-right"></div>     
+        <header class="app-bar">
+            <i class="material-icons close"
+            >clear</i>
+
+            <div class="middle-xs">
+            <span 
+                class="logo col-xs-2">
+                <img 
+                src="../../img/dropdownLogo.png" 
+                            class="float-right">
+            </span>
             </div>
-    </div>
+
+            <ul class="content">
+                <li class="page-scroll"
+                >
+                    <a >zerez</a>
+                    <a >qds</a>
+                    <a >zesqdqsrez</a>
+                    <a >dqsd</a>
+                    <a >zzer</a>
+                    <a >sqdqs</a>
+                    <a >aaaa</a>
+                </li>
+            </ul>
+        </header>
     `
 })
 

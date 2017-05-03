@@ -68,7 +68,9 @@ import { AngularFire, FirebaseListObservable } from 'angularfire2';
             }
 
             button{
-
+                min-width: 60px;
+                font-size: 6vw;
+                padding: 10px;
             }
         }
     `],

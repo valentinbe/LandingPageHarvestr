@@ -26,8 +26,7 @@ var config = {
   },
 
   plugins: [
-    new webpack.optimize.CommonsChunkPlugin({ name: ['polyfills', 'vendor', 'main'].reverse(), minChunks: Infinity }),
-  ],
+     ],
 
   resolve: {
     extensions: ['', '.ts', '.js', '.json']

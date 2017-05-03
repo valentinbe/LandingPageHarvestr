@@ -46,51 +46,52 @@ import { AngularFire, FirebaseListObservable } from 'angularfire2';
     `],
     template: `
         <div class="bckgd item active" style="">
-        <div 
-            class="note-card row"
-        >
-        <div class="col-sides-left"></div>
-        <div class="col-fixed-center-left">
-        <div class="text">
-        <h1>
-            {{ descCard.title }}
-        </h1>
-        <h6>
-            {{ descCard.sub }}
-        </h6>
+            <div 
+                class="note-card"
+            >
+            <div 
+                class="row"
+            >
+                <div class="col-sides-left"></div>
+                <div class="col-fixed-center-left">
+                    <div class="text">
+                        <h1>
+                            {{ descCard.title }}
+                        </h1>
+                        <h6>
+                            {{ descCard.sub }}
+                        </h6>
+                    </div>  
+                    <form (ngSubmit)="sendEmail()" 
+                    #authForm="ngForm">
+                        <div class="inputs row">
+                            <input
+                                class="email col-xs-8"
+                                type="email"
+                                name="email"
+                                placeholder="{{ descCard.inputText }}"
+                                required
+                                [(ngModel)]="user.email"
+                                #email="ngModel"
+                            >
+                            <div class="actions">
+                                <div>
+                                <button
+                                    type="submit"
+                                    class="btn-light"
+                                >
+                                    {{ descCard.butText }}
+                                </button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-fixed-center-right"></div>
+                <div class="col-sides-right"></div>     
+            </div>
+            </div>
         </div>
-
-        
-        <form (ngSubmit)="sendEmail()" 
-        #authForm="ngForm">
-        <div class="inputs row">
-          <input
-            class="email col-xs-8"
-            type="email"
-            name="email"
-            placeholder="{{ descCard.inputText }}"
-            required
-            [(ngModel)]="user.email"
-            #email="ngModel"
-          >
-          <div class="actions">
-            <div>
-              <button
-                type="submit"
-                class="btn-light"
-              >
-                {{ descCard.butText }}
-              </button>
-           </div>
-         </div>
-        </div>
-      </form>
-      </div>
-      <div class="col-fixed-center-right"></div>
-      <div class="col-sides-right"></div>
-        
-    </div>
-    </div>
     `
 })
 

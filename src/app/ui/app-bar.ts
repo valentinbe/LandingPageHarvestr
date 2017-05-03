@@ -18,10 +18,6 @@ import { Component, Output, EventEmitter, NgZone } from '@angular/core';
             border-color: white;
         }
 
-        .row {
-            padding: 5px 30px;
-        }
-        
         .page-scroll-header {
             height: 80px;
             color: black;
@@ -30,11 +26,17 @@ import { Component, Output, EventEmitter, NgZone } from '@angular/core';
             box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
             border-color: black;
         }
+
+        .row {
+            padding: 5px 30px;
+        }
+        
         .logo {     
             font-size: 30px;
             font-weight: 300;
             cursor: pointer;
         }
+        
         .link {
             font-size: 24px;
             font-weight: 400;

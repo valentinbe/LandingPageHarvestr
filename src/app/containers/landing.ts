@@ -6,11 +6,11 @@ import { Component } from '@angular/core';
      
     `],
   template: `
-    <div class="landing-container">
+  
       <main-desc 
                 [descCard]="mainCard"
             >
-            </main-desc>
+        </main-desc>
       <two-desc
                 [descCard]="card"
                 *ngFor="
@@ -30,7 +30,6 @@ import { Component } from '@angular/core';
         <!--
         <footer></footer>
         --->
-    </div>
   `
 })
 

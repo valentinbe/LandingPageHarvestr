@@ -63,7 +63,7 @@ import { Component, Output, EventEmitter, NgZone } from '@angular/core';
 
         .col-center-l{
             float: center;
-            width: calc(100% - 577px);
+            width: calc(100% - 617px);
         }
         .col-center-s{
             float: center;
@@ -85,7 +85,7 @@ import { Component, Output, EventEmitter, NgZone } from '@angular/core';
         }
 
         .col-sides-right{
-            width: 320px;
+            width: 340px;
         }
 
         @media (max-width : 500px )

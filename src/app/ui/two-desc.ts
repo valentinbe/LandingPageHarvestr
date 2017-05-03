@@ -96,6 +96,15 @@ import { Component, Input, EventEmitter, NgZone } from '@angular/core';
         .img-content {
             display: none;
         }
+
+        h2{
+            font-size: 10vw;
+            Line-Height: 10vw;
+        }
+        span{
+            font-size: 6vw;
+            Line-Height: 6vw;
+        }
     }
     `],
     template: `

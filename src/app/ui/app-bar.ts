@@ -87,6 +87,15 @@ import { Component, Output, EventEmitter, NgZone } from '@angular/core';
         .col-sides-right{
             width: 300px;
         }
+
+        @media (max-width : 500px )
+        {
+            .logo {     
+                font-size: 30px;
+                font-weight: 300;
+                cursor: pointer;
+            }
+        }
     `],
     host: {
         '(window:scroll)': 'updateHeader($event)'

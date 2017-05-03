@@ -45,10 +45,10 @@ import { AngularFire, FirebaseListObservable } from 'angularfire2';
         }
     `],
     template: `
-        <div class="bckgd item active note-card" style="">
-            <div 
-                class=""
-            >
+        <div 
+            class="note-card"
+        >
+        <div class="bckgd item active" style="">
             <div 
                 class="row"
             >
@@ -90,7 +90,7 @@ import { AngularFire, FirebaseListObservable } from 'angularfire2';
                 <div class="col-fixed-center-right"></div>
                 <div class="col-sides-right"></div>     
             </div>
-            </div>
+        </div>
         </div>
     `
 })

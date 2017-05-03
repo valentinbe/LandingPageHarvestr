@@ -43,6 +43,16 @@ import { AngularFire, FirebaseListObservable } from 'angularfire2';
             width: calc(50% - 520px);
             float: right;
         }
+
+        @media (max-width : 500px )
+        {
+            .h1{
+                font-size: 5vw;
+            }
+            .h6{
+                font-size: 3vw;
+            }
+        }
     `],
     template: `
         <div class="bckgd " style="">

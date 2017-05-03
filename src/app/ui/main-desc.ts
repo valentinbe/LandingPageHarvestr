@@ -54,15 +54,10 @@ import { AngularFire, FirebaseListObservable } from 'angularfire2';
         <div class="col-fixed-center-left">
         <div class="text">
         <h1>
-            hello
+            {{ descCard.title }}
         </h1>
         <h6>
-            <ul>
-                <li class="text" *ngFor="let item of messageListRef | async">
-                    {{item.$value}}
-                </li>
-            </ul>
-
+            {{ descCard.sub }}
         </h6>
         </div>
 

@@ -64,7 +64,7 @@ import { Component, Input, EventEmitter } from '@angular/core';
             }
 
             .note-card {
-                padding-top: 20px;  
+                padding-top: 30px;  
             } 
         }
     

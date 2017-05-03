@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "postinstalld": "rimraf ./dist && NODE_ENV=production webpack --config ./webpack.prod.config.js --progress --colors && cp ./src/index.html ./dist/index.html && cp ./src/global.css ./dist/global.css && cp -R ./src/img ./dist/img",
+    "postinstall": "rimraf ./dist && NODE_ENV=production webpack --config ./webpack.prod.config.js --progress --colors && cp ./src/index.html ./dist/index.html && cp ./src/global.css ./dist/global.css && cp -R ./src/img ./dist/img",
     "start": "angularclass-server --api retain --port 3500 --auth",
     "startbckp": "node server.js && npm run api",
     "dev": "webpack-dev-server --inline --colors --progress --display-error-details --display-cached --port 3000  --content-base src",

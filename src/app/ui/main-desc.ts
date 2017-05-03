@@ -71,8 +71,6 @@ import { AngularFire, FirebaseListObservable } from 'angularfire2';
                 min-width: 60px;
                 font-size: 6vw;
                 padding: 10px;
-                margin-right: 10px;
-                margin-left: 10px;
             }
         }
     `],

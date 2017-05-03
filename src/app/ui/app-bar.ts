@@ -11,12 +11,17 @@ import { Component, Output, EventEmitter, NgZone } from '@angular/core';
             left: 0;
             width: 100%;
             height: 100px;
-            padding: 5px 30px;
+            
             background-color: transparent ;
             color: white;
             transition: background-color 0.5s ease-out;
             border-color: white;
         }
+
+        .row {
+            padding: 5px 30px;
+        }
+        
         .page-scroll-header {
             height: 80px;
             color: black;

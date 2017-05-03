@@ -74,8 +74,6 @@ import { Component, Input, EventEmitter, NgZone } from '@angular/core';
             padding-bottom: 50px;
             text-align:center;
             height: 100%;
-            padding-left: 35px;
-            padding-right: 35px;
         }
         
         .text-content {

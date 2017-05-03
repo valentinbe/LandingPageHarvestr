@@ -34,6 +34,8 @@ import { Component, Output, EventEmitter, NgZone } from '@angular/core';
         font-size: 24px;
         font-weight: 400;
         cursor: pointer; 
+        font-color: white;
+        text-decoration:none;
         }
         
         .menu-dropdown{

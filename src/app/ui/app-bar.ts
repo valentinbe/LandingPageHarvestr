@@ -118,7 +118,7 @@ import { Component, Output, EventEmitter, NgZone } from '@angular/core';
                 class="row middle-xs between-xs col-sides-right">
                 <span class="link"
                     *ngFor="let contentMenu of navContent"
-                    href="{{ contentMenu.link }}"
+                    [routerLink]="{{ contentMenu.link }}"
                 >
                     {{ contentMenu.text }}
                 </span>

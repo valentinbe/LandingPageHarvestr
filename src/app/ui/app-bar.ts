@@ -85,7 +85,7 @@ import { Component, Output, EventEmitter, NgZone } from '@angular/core';
         }
 
         .col-sides-right{
-            width: 300px;
+            width: 320px;
         }
 
         @media (max-width : 500px )

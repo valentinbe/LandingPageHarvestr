@@ -98,12 +98,12 @@ import { Component, Input, EventEmitter, NgZone } from '@angular/core';
         }
 
         h2{
-            font-size: 8vw;
-            Line-Height: 8vw;
+            font-size: 9vw;
+            Line-Height: 9vw;
         }
         span{
-            font-size: 5vw;
-            Line-Height: 4vw;
+            font-size: 6vw;
+            Line-Height: 5vw;
         }
     }
     `],

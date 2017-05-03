@@ -6,6 +6,7 @@ import { Component, Input, EventEmitter, NgZone } from '@angular/core';
     styles: [` 
     .note-card {
         width: 100%;
+        position: relative;
         height: 600px;
         border-top: 1px solid #C6C7C8;
     } 
@@ -91,9 +92,7 @@ import { Component, Input, EventEmitter, NgZone } from '@angular/core';
     }
     `],
     template: `
-    <div 
-        class="note-card"
-    > 
+
     <div 
         class="note-card center-text-container"
         [ngStyle]="{'background-color': descCard.color}"
@@ -151,7 +150,6 @@ import { Component, Input, EventEmitter, NgZone } from '@angular/core';
                 </div>
             </div> 
         </div>
-    </div>
     </div>
     `
 })

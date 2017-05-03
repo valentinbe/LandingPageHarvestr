@@ -11,13 +11,7 @@ import { Component } from '@angular/core';
                 [descCard]="mainCard"
             >
         </main-desc>
-      <two-desc
-                [descCard]="card"
-                *ngFor="
-                    let card of descCards;
-                "
-            >
-            </two-desc>
+      
   
         <testimonials-desc
             [testimonials]="testimonialsCards">

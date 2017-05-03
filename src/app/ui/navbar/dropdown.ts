@@ -52,7 +52,27 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
     `],
     template: `
         <header class="app-bar">
-  
+            <i class="material-icons close"
+            (click)="closeDropdown()"
+            >clear</i>
+
+            <div class="middle-xs">
+            <span 
+                [routerLink]="['']"
+                class="logo col-xs-2">
+                <img 
+                src="../../img/dropdownLogo.png" 
+                            class="float-right">
+            </span>
+            </div>
+
+            <ul class="content">
+                <li class="page-scroll"
+                    *ngFor="let contentMenu of navContent"
+                >
+                    <a href="{{ contentMenu.link }}">{{ contentMenu.text }}</a>
+                </li>
+            </ul>
         </header>
     `
 })

@@ -56,7 +56,7 @@ import { Component, Input, EventEmitter } from '@angular/core';
 
             .quote{
                 font-size: 6vw;
-                Line-Height: 7vw;
+                Line-Height: 8vw;
             }
 
             .circular--landscape {

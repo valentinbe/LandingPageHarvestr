@@ -90,10 +90,7 @@ import { Component, Output, EventEmitter, NgZone } from '@angular/core';
 
         @media (max-width : 500px )
         {
-            .logo {     
-                width: 30px;
-                height: auto;
-            }
+
         }
     `],
     host: {

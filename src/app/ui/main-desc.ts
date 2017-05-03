@@ -47,10 +47,10 @@ import { AngularFire, FirebaseListObservable } from 'angularfire2';
         @media (max-width : 500px )
         {
             h1{
-                font-size: 20vw;
+                font-size: 12vw;
             }
             h6{
-                font-size: 15vw;
+                font-size: 10vw;
             }
         }
     `],

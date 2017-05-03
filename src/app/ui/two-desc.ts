@@ -10,7 +10,7 @@ import { Component, Input, EventEmitter, NgZone } from '@angular/core';
         height: 600px;
         border-top: 1px solid #C6C7C8;
     } 
-    .cetner-text-container {
+    .center-text-container {
         display: table;
         width: 100%;
     }
@@ -94,7 +94,7 @@ import { Component, Input, EventEmitter, NgZone } from '@angular/core';
     template: `
 
     <div 
-        class="note-card cetner-text-container"
+        class="note-card center-text-container"
         [ngStyle]="{'background-color': descCard.color}"
         d-flex align-items-center
     > 

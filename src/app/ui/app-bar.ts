@@ -91,62 +91,63 @@ import { Component, Output, EventEmitter, NgZone } from '@angular/core';
             (dropdownClose)="hideDropdown()">
         </dropdown-bar>
         
-        <header class="app-bar "
+        <header class="app-bar"
         [ngClass]= "{'page-scroll-header': isScrolled}"
         >
-        
-        <span 
-            [routerLink]="['']"
-            class="logo col-sides-left">
-            <img 
-            *ngIf="isScrolled"
-            src="../../img/logob.png" 
-                        class="float-right">
-            <img 
-            *ngIf="!isScrolled"
-            src="../../img/logow.png" 
-                        class="float-right">
-        </span>
-        
-        <div *ngIf="!collapseState"
-            class="col-center-l">
-        </div>
-        <div *ngIf="collapseState==1"
-            class="col-center-s">
-        </div>
-        <div *ngIf="collapseState==2"
-            class="col-center-xs">
-        </div>
-
-        <nav>
-            <div 
-                *ngIf="!collapseState"
-                class="row middle-xs between-xs col-sides-right">
-                <a class="link"
-                    *ngFor="let contentMenu of navContent"
-                    href="{{ contentMenu.link }}"
-                >
-                    {{ contentMenu.text }}
-                </a>
+        <div class="row middle-xs">
+            <span 
+                [routerLink]="['']"
+                class="logo col-sides-left">
+                <img 
+                *ngIf="isScrolled"
+                src="../../img/logob.png" 
+                            class="float-right">
+                <img 
+                *ngIf="!isScrolled"
+                src="../../img/logow.png" 
+                            class="float-right">
+            </span>
+            
+            <div *ngIf="!collapseState"
+                class="col-center-l">
+            </div>
+            <div *ngIf="collapseState==1"
+                class="col-center-s">
+            </div>
+            <div *ngIf="collapseState==2"
+                class="col-center-xs">
             </div>
 
-            <div 
-                *ngIf="collapseState==1"
-                class="link menu-dropdown small"
-                (click)="showDropdown()">
-                <i class="material-icons dropdownIcon">menu</i>
-                <span
-                >
-                    Menu
-                </span>
-            </div>
-            <div 
-                *ngIf="collapseState==2"
-                class="link menu-dropdown xsmall"
-                (click)="showDropdown()">
-                <i class="material-icons dropdownIcon">menu</i>
-            </div>
-        </nav>
+            <nav>
+                <div 
+                    *ngIf="!collapseState"
+                    class="row middle-xs between-xs col-sides-right">
+                    <a class="link"
+                        *ngFor="let contentMenu of navContent"
+                        href="{{ contentMenu.link }}"
+                    >
+                        {{ contentMenu.text }}
+                    </a>
+                </div>
+
+                <div 
+                    *ngIf="collapseState==1"
+                    class="link menu-dropdown small"
+                    (click)="showDropdown()">
+                    <i class="material-icons dropdownIcon">menu</i>
+                    <span
+                    >
+                        Menu
+                    </span>
+                </div>
+                <div 
+                    *ngIf="collapseState==2"
+                    class="link menu-dropdown xsmall"
+                    (click)="showDropdown()">
+                    <i class="material-icons dropdownIcon">menu</i>
+                </div>
+            </nav>
+        </div>
         </header>
     `
 })

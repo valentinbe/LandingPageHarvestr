@@ -10,6 +10,7 @@ import { Component, Input, EventEmitter, NgZone } from '@angular/core';
         height: 600px;
         border-top: 1px solid #C6C7C8;
     } 
+
     .center-text-container {
         display: table;
         width: 100%;
@@ -73,8 +74,6 @@ import { Component, Input, EventEmitter, NgZone } from '@angular/core';
             padding-bottom: 50px;
             text-align:center;
             height: 100%;
-            padding-left: 35px;
-            padding-right: 35px;
         }
         
         .text-content {
@@ -83,11 +82,7 @@ import { Component, Input, EventEmitter, NgZone } from '@angular/core';
         }
 
         .img-content {
-            text-align: center;
-            max-width: 100%;
-            height:auto;
-            text-align: center;  
-            padding-top: 100px; 
+            display: none;
         }
     }
     `],

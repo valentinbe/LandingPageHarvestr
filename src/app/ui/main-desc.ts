@@ -46,11 +46,17 @@ import { AngularFire, FirebaseListObservable } from 'angularfire2';
 
         @media (max-width : 500px )
         {
+            .note-card {
+                padding-top: 110px;
+            }
+
             h1{
                 font-size: 12vw;
+                Line-Height: 12vw;
             }
             h6{
-                font-size: 10vw;
+                font-size: 8vw;
+                Line-Height: 8vw;
             }
         }
     `],

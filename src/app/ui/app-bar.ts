@@ -28,7 +28,7 @@ import { Component, Output, EventEmitter, NgZone } from '@angular/core';
         }
 
         .row {
-            padding: 5px 30px;
+            padding: 8px 30px;
         }
         
         .logo {     

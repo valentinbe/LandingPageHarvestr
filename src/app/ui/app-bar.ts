@@ -172,11 +172,11 @@ export class AppBar {
         },
         {
             text: 'More',
-            link: "['./about']",
+            link: "about",
         },
         {
             text: 'Contact us',
-            link: "['/', 'about']",
+            link: "about",
         }
     ];
 

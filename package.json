@@ -4,10 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "postinstall": "rimraf ./dist && NODE_ENV=production webpack --config ./webpack.prod.config.js --progress --colors && cp ./src/index.html ./dist/index.html && cp ./src/global.css ./dist/global.css && cp -R ./src/img ./dist/img",
-    "start": "node server.js",
-    "dev": "webpack-dev-server --inline --colors --progress --display-error-details --display-cached --port 3000  --content-base src",
-    "api": "angularclass-server --api retain --port 3500 --auth"
+    "postinstall": "if-env NODE_ENV=dev && npm run build:dev || npm run build:prod",
+    "start": "if-env NODE_ENV=dev && npm run start:dev || npm run start:prod",
+    "build:dev": "echo 'dev build'",
+    "build:prod": "rimraf ./dist && webpack --config ./webpack.prod.config.js --progress --colors && cp ./src/index.html ./dist/index.html && cp ./src/global.css ./dist/global.css && cp -R ./src/img ./dist/img",
+    "start:dev": "webpack-dev-server --inline --colors --progress --display-error-details --display-cached --port 3000  --content-base src",
+    "start:prod": "node server.js",
+    "devapi": "angularclass-server --api retain --port 3500 --auth"
   },
   "author": "",
   "license": "ISC",
@@ -21,11 +24,11 @@
     "@angular/platform-browser-dynamic": "^2.0.0",
     "@angular/router": "^3.0.0",
     "@angularclass/api": "^1.2.0",
-    "angular-cli": "1.0.0-beta.22-1",
     "angularfire2": "^2.0.0-beta.8",
     "core-js": "^2.4.1",
     "express": "^4.15.2",
     "firebase": "^3.9.0",
+    "if-env": "^1.0.0",
     "lodash": "^4.16.1",
     "morgan": "^1.8.1",
     "rxjs": "^5.0.0-beta.12",
@@ -48,7 +51,5 @@
     "typescript": "=2.0.10",
     "webpack": "^1.13.1",
     "webpack-dev-server": "^1.14.1"
-
   }
 }
-

@@ -16,6 +16,6 @@ app.get('/', function(req, res) {
   res.sendFile(path.join(__dirname + '/dist/index.html'));
 });
 
-app.get('/about', function(req, res) {
+app.get('/[\'about\']', function(req, res) {
   res.sendFile(path.join(__dirname + '/dist/index.html'));
 });

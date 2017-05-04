@@ -4,7 +4,8 @@ import { Main, LandingContainer, About, Auth } from './containers';
 import { AuthService } from './services';
 
 /** routes is a module */
-/** cest lepremier module chargé a louverture de la page, ensuite launch Main */
+/** cest lepremier module chargé a louverture 
+ *  de la page, ensuite launch Main */
 export const routes: ModuleWithProviders = RouterModule.forRoot([
   {
     path: '',
@@ -16,5 +17,7 @@ export const routes: ModuleWithProviders = RouterModule.forRoot([
     ]
   },
   { path: 'auth', component: Auth },
-  { path: '**', redirectTo: '' } /** ** means anything else */
+  { path: '**', redirectTo: '' } 
+  /** 
+   * means anything else */
 ]);

@@ -168,7 +168,7 @@ export class AppBar {
     navContent = [
         {
             text: 'About',
-            link: "['about']",
+            link: "about",
         },
         {
             text: 'More',

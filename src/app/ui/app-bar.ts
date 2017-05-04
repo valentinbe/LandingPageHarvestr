@@ -63,19 +63,19 @@ import { Component, Output, EventEmitter, NgZone } from '@angular/core';
 
         .col-center-l{
             float: center;
-            width: calc(100% - 637px);
+            width: calc(100% - 580px);
         }
         .col-center-s{
             float: center;
-            width: calc(100% - 420px);
+            width: calc(100% - 363px);
         }
         .col-center-xs{
             float: center;
-            width: calc(100% - 345px);
+            width: calc(100% - 288px);
         }
 
         .col-sides-left{
-            width: 277px;
+            width: 220px;
         }
         .menu-dropdown.small{
             width:120px;
